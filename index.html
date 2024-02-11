@@ -35,7 +35,7 @@
             <li>bonobas</li>
         </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-tittle">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
@@ -70,9 +70,16 @@
         fruitsTittle.innerText = "Fruits change by javascript";
 
         const Places = document.getElementsByClassName("important-places");
-        console.log(Places);
+        // console.log(Places);
         for (const Place of Places){
-            console.log(Place.innerText);
+            // console.log(Place.innerText);
+        }
+
+        // querySelectorAll
+        const someLi = document.querySelectorAll(".fruits-container li");
+        console.log(someLi);
+        for(const li of someLi){
+            console.log(li.innerText);
         }
     </script>
 </body>
