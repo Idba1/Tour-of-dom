@@ -13,8 +13,8 @@
         #fruits-tittle{
             color: black;
         }
-        #places-tittle{
-            
+        .important-places{
+            color: blueviolet;
         }
     </style>
 </head>
@@ -46,9 +46,9 @@
         <section>
             <h1 id="places-tittle">Places I like to visit</h1>
             <ul>
-                <li>Sondarban</li>
-                <li>Bandorban</li>
-                <li>katabon</li>
+                <li class="important-places">Sondarban</li>
+                <li class="important-places">Bandorban</li>
+                <li class="important-places">katabon</li>
                 <li>Salbon</li>
             </ul>
         </section>
@@ -57,14 +57,23 @@
     <script>
         const liCollection = document.getElementsByTagName("li");
         for(const item of liCollection){
-            console.log(item.innerText);
+            // console.log(item.innerText);
         }
 
         const allHeading = document.getElementsByTagName("h1");
         for (const h1 of allHeading){
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
-        console.log("adding js inside the html file");
+        // console.log("adding js inside the html file");
+
+        const fruitsTittle = document.getElementById("fruits-tittle");
+        fruitsTittle.innerText = "Fruits change by javascript";
+
+        const Places = document.getElementsByClassName("important-places");
+        console.log(Places);
+        for (const Place of Places){
+            console.log(Place.innerText);
+        }
     </script>
 </body>
 
