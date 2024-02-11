@@ -55,6 +55,8 @@
     </main>
     <script src="js/dom.js"></script>
     <script>
+
+        // Option 1: GetElementByTagName
         const liCollection = document.getElementsByTagName("li");
         for(const item of liCollection){
             // console.log(item.innerText);
@@ -66,16 +68,19 @@
         }
         // console.log("adding js inside the html file");
 
+        // Option 2: getElementById
         const fruitsTittle = document.getElementById("fruits-tittle");
         fruitsTittle.innerText = "Fruits change by javascript";
 
+        // Option 3: getElementsByClassName
         const Places = document.getElementsByClassName("important-places");
         // console.log(Places);
         for (const Place of Places){
             // console.log(Place.innerText);
         }
 
-        // querySelectorAll
+        // option 4: querySelector
+        // Option 5: querySelectorAll
         const someLi = document.querySelectorAll(".fruits-container li");
         console.log(someLi);
         for(const li of someLi){
