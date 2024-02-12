@@ -43,8 +43,8 @@
                 <li>orange</li>
             </ul>
         </section>
-        <section>
-            <h1 id="places-tittle">Places I like to visit</h1>
+        <section id="places-container" class="large-text">
+            <h1 id="places-tittle" class="some-class  bliu-bg random-class">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Sondarban</li>
                 <li class="important-places">Bandorban</li>
@@ -54,6 +54,7 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/style.js"></script>
     <script>
 
         // Option 1: GetElementByTagName
@@ -82,9 +83,9 @@
         // option 4: querySelector
         // Option 5: querySelectorAll
         const someLi = document.querySelectorAll(".fruits-container li");
-        console.log(someLi);
+        // console.log(someLi);
         for(const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
